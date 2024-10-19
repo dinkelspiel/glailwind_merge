@@ -2,9 +2,13 @@
 # You typically do not need to edit this file
 
 packages = [
+  { name = "decimal", version = "2.1.1", build_tools = ["mix"], requirements = [], otp_app = "decimal", source = "hex", outer_checksum = "53CFE5F497ED0E7771AE1A475575603D77425099BA5FAEF9394932B35020FFCC" },
   { name = "gleam_stdlib", version = "0.40.0", build_tools = ["gleam"], requirements = [], otp_app = "gleam_stdlib", source = "hex", outer_checksum = "86606B75A600BBD05E539EB59FABC6E307EEEA7B1E5865AFB6D980A93BCB2181" },
   { name = "gleeunit", version = "1.2.0", build_tools = ["gleam"], requirements = ["gleam_stdlib"], otp_app = "gleeunit", source = "hex", outer_checksum = "F7A7228925D3EE7D0813C922E062BFD6D7E9310F0BEE585D3A42F3307E3CFD13" },
+  { name = "jason", version = "1.4.4", build_tools = ["mix"], requirements = ["decimal"], otp_app = "jason", source = "hex", outer_checksum = "C5EB0CAB91F094599F94D55BC63409236A8EC69A21A67814529E8D5F6CC90B3B" },
+  { name = "tails", version = "0.1.11", build_tools = ["mix"], requirements = ["jason"], otp_app = "tails", source = "hex", outer_checksum = "A908C1E3191610D606F1518EB108B7ABE3E91FCC2EBDA16B321E917D0D8987DD" },
 ]
 
 [requirements]
 gleeunit = { version = ">= 1.0.0 and < 2.0.0" }
+tails = { version = ">= 0.1.11 and < 1.0.0" }
