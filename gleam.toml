@@ -1,0 +1,9 @@
+name = "glailwind_merge"
+target = "javascript"
+version = "1.0.0"
+description = "Unofficial gleam wrapper for tailwind-merge for efficient merging of Tailwind CSS classes without conflicts"
+licences = ["MIT"]
+repository = { type = "github", user = "dinkelspiel", repo = "glailwind_merge" }
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
